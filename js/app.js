@@ -55,6 +55,7 @@ function total() {
     const deliveryPriceUpdated = Number(deliveryPrice.innerText);
     const totalPriceUpdated = bestPriceUpdated + memoryPriceUpdated + UupdatedStoragePrice + deliveryPriceUpdated;
     totalPrice.innerText = totalPriceUpdated;
+    discountTotal.innerText = totalPriceUpdated;
 
 }
 
