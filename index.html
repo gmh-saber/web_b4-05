@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!------------------------------  Title  ----------------------------------------------->
+
+    <title>Mac Book 2020</title>
+
+    <!----------------------   Bootstrap cdn link -------------------------------->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!----------------------  Google font -------------------------------------------------->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: "Noto Sans JP", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container pt-4">
+        <div class="row">
+            <div class="col-6">
+                <img src="./images/mac.png" alt="" width="400" />
+            </div>
+
+            <div class="col-6">
+                <!-----------------------     HeaderStart ----------------------------------------->
+                <header class="py-2">
+                    <h1>Customize your Blue 24-inch iMac with Apple M1 chip</h1>
+                    <article class="py-2">
+                        Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and
+                        16-core Neural Engine 8GB unified memory 256 GB SSD storage Two Thunderbolt/ USb 4 ports Magic
+                        keyboard-US English.
+                    </article>
+                </header>
+                <!-----------------------     HeaderEnd   ----------------------------------------->
+
+                <!-------------------------- Main Body -------------------------------------->
+                <main>
+                    <!----- memory part  ----->
+                    <h3 class="mt-2">Memory</h3>
+                    <button type="button" class="btn btn-outline-dark" id="firstMemory">8GB unified memory</button>
+                    <button type="button" class="btn btn-outline-dark" id="secondMemory">16GB unified memory</button>
+
+                    <!------ memory part ------>
+                    <!----- Storage part  ---->
+                    <h3 class="mt-2">Storage</h3>
+                    <button type="button" class="btn btn-outline-dark" id="firstStorage">256GB SSD storage</button>
+                    <button type="button" class="btn btn-outline-dark" id="secondStorage">512GB SSD storage</button>
+                    <button type="button" class="btn btn-outline-dark" id="thirdStorage">1TB SSD storage</button>
+
+                    <!------ Storage part ------>
+
+                    <!-- Choose  delivery option part -->
+
+                    <h3 class="mt-2">Choose your delivery option</h3>
+                    <button type="button" class="btn btn-outline-dark" id="deliveryFirst">Friday,Aug 25 Free Prime
+                        Delivery</button>
+                    <button type="button" class="btn btn-outline-dark" id="deliverySecond">Friday,Aug 21 Delivery Charge
+                        $20</button>
+
+                    <!-- Choose  delivery option part -->
+
+                    <!-- calculation part    -->
+
+                    <div class="table pt-5">
+                        <table class="table">
+                            <!-- <thead> -->
+
+                            <!-- </thead> -->
+                            <tbody>
+                                <tr>
+
+                                    <th scope="col">Best Price</th>
+                                    <th scope="col">$<span id="bestPrice">1299</span></th>
+                                </tr>
+                            <tbody>
+                                <th scope="row">Extra Memory Cost</th>
+                                <th>$<span id="extraPriceOfMemory">0</span> </th>
+
+                                <tr>
+                                    <th scope="row">Extra Storage Cost</th>
+                                    <th>$<span id="extraPriceOfStorage">0</span></th>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">Delivery change</th>
+                                    <th colspan="2">$<span id="deliveryPriceUpdate">0</span> </th>
+
+                                </tr>
+                                <hr>
+                                <tr>
+                                    <th scope="row ">Total Price</th>
+                                    <th colspan="2">$<span id="priceInTotal">1299</span> </th>
+                                </tr>
+
+
+                            </tbody>
+
+                            </tbody>
+                        </table>
+
+
+                        <!-- calculation part End's  -->
+
+
+                        <!-- Promo Code part Start's here  -->
+                        <h5 class="mt-3 text-center">Please enter a Coupon to get discount</h5>
+                        <div class="input-group mb-3 mt-2">
+                            <input type="text" class="form-control" aria-describedby="button-addon2"
+                                id="applyCuponInput">
+                            <button class="btn btn-danger" type="button" id="applyCuponButton">Apply</button>
+
+                        </div>
+                        <h3 style="color: red; display: none;" id="success-message" class="text-center">Coupon Applied
+                        </h3>
+                        <h3 style="color: red; display: none;" id="error-message" class="text-center">This Coupon Code
+                            isn't valid, Enter a valid Code</h3>
+                        <!-- Promo Code part  End's here -->
+
+
+
+                </main>
+                <!-------------------------- Main Body End's  ---------------------------------------->
+            </div>
+        </div>
+
+        <hr>
+        <h1 class="text-center">Total:$<span id="discountTotal">1299</span> </h1>
+    </section>
+
+    <!------------------------- Bootstrap and extern js  linking Start  --------------------------------------->
+    <script src="./js/app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
